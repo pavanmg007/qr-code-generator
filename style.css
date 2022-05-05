@@ -62,7 +62,7 @@ input[type="text"] {
 input[type="submit"],
 button {
   display: inline-block;
-  width: 49%;
+  width: 100%;
   background-color: var(--green-submit);
   color: var(--white);
   padding: 14px 20px;

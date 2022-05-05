@@ -11,13 +11,6 @@ submit.addEventListener("submit", (e) => {
   const finalApi = api + url.value + "&size=500x500";
   const qrcode = document.querySelector("#qrcode");
   qrcode.setAttribute("src", finalApi);
+  qrcode.setAttribute("download", "qrcode.jpg");
   url.value = "";
-  document.querySelector("button").addEventListener("click", function () {
-    let link = document.createElement("a");
-    link.href = finalApi;
-    link.download = "qrcode.jpg";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  });
 });
