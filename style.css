@@ -1,22 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 :root {
   --white: hsl(0, 0%, 100%);
   --light-gray: hsl(0, 0%, 73%);
   --grayish-blue: hsl(220, 15%, 55%);
   --green-submit: hsl(122, 39%, 49%);
 }
-
 img {
   max-width: 100%;
 }
-
 body {
   font-family: "Outfit", sans-serif;
   font-size: 15px;
@@ -63,18 +59,7 @@ input[type="text"] {
   border-radius: 4px;
   box-sizing: border-box;
 }
-input[type="submit"] {
-  display: inline-block;
-  width: 49%;
-  background-color: var(--green-submit);
-  color: var(--white);
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  box-sizing: border-box;
-}
+input[type="submit"],
 button {
   display: inline-block;
   width: 49%;
@@ -87,7 +72,6 @@ button {
   cursor: pointer;
   box-sizing: border-box;
 }
-
 @media (min-width: 500px) {
   .container {
     width: 400px;
