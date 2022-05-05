@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>QR Code Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        id="qrcode"
+        src="https://api.qrserver.com/v1/create-qr-code/?data=https://example.com&size=500x500"
+        alt=""
+      />
+      <form action="" id="qrform">
+        <label for="data">Add URL Below</label>
+        <input
+          type="text"
+          name="URL"
+          id="data"
+          placeholder="Enter URL, Phone Number, Text.....etc"
+        />
+        <input id="submit" type="submit" value="SUBMIT" />
+        <button>DOWNLOAD</button>
+      </form>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

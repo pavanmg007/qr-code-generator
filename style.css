@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 73%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --green-submit: hsl(122, 39%, 49%);
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  background-color: var(--grayish-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 1px);
+  margin: 1.25rem;
+}
+.container {
+  background-color: var(--white);
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+.center {
+  text-align: center;
+}
+label {
+  color: var(--dark-blue);
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.285rem;
+  font-weight: 600;
+  display: block;
+}
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+::placeholder {
+  color: var(--light-gray);
+  font-size: 1rem;
+}
+input[type="text"] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  display: inline-block;
+  width: 49%;
+  background-color: var(--green-submit);
+  color: var(--white);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+button {
+  display: inline-block;
+  width: 49%;
+  background-color: var(--green-submit);
+  color: var(--white);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+@media (min-width: 500px) {
+  .container {
+    width: 400px;
+  }
+}
